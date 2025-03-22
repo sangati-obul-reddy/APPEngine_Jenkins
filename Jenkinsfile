@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_ID = 'avian-chariot-450105-b7'
+        PROJECT_ID = 'my-project-449715'
         GOOGLE_APPLICATION_CREDENTIALS = credentials('gcp-service-account')  // Service account credential
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/saleemafroze/appengine-2025.git'
+                git branch: 'main', url: 'https://github.com/sangati-obul-reddy/APPEngine_Jenkins.git'
             }
         }
 
